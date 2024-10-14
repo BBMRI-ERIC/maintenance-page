@@ -1,0 +1,7 @@
+services:
+  maintenance:
+    image: bbmrieric/maintenance
+    ports:
+      - "8080:8080"
+    container_name: bitnami-maintenance-page
+    restart: unless-stopped
