@@ -48,7 +48,7 @@ services:
       TEAM_MESSAGE: "BBMRI-ERIC IT Team"
 ```
 > [!TIP]
-> This setup integrates seamlessly with [Traefik](https://traefik.io/) by configuring both the maintenance container and your web application container to use the same route path. To prioritize the maintenance container, add the label traefik.http.routers.maintenance.priority=1 to it. Additionally, ensure that the web application container has a similar label with a higher priority value.
+> This setup integrates seamlessly with [Traefik](https://traefik.io/) by configuring both the maintenance container and your web application container to use the same route path. To prioritize the maintenance container, add the label `traefik.http.routers.maintenance.priority=1` to it. Additionally, ensure that the web application container has a similar label with a higher priority value.
  ```yaml
  # Maintenance Container
  labels:
